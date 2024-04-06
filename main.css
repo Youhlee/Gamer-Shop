@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+/*Adionando a fonte Bungee /  Adding the font Bungee to our project */
+header,
+section h2 {
+  font-family: "Bungee", cursive;
+}
+
+/*Adionando a fonte Roboto /  Adding the font Roboto to our project */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /*Cabeçalho da  página / Page header*/
 header {
   padding: 16px 0; /*Espaçamento interno de 16px na parte de cima em embaixo e 0 nas laterais / Internal spacing of 16px at the top and bottom and 0 on the sides*/
@@ -12,11 +23,17 @@ header {
   color: #ecf0f1; /*Cor do texto do cabeçalho / Text color of the header*/
 }
 
+/*Ajustando o peso do texto para que fique mais legível / Adjusting the weight of the text so it is more readable*/
+header h1,
+section h2 {
+  font-weight: Normal; /*Fonte normal para o título / Regular weight for the title*/
+}
+
 /*Listas da navegação do  cabeçalho / Navigation list in the header*/
 header nav li {
   display: inline; /*Exibe os itens na mesma linha /  Display items in the same line*/
-  margin-left: 16px; /*Espaço entre os itens da lista / Space between list items*/
-  font-size: 24px; /*Tamanho da fonte dos itens da lista / Font size of list items*/
+  margin-left: 16px; /*Espaço externo entre os itens da lista / External space between list items*/
+  font-size: 18px; /*Tamanho da fonte dos itens da lista / Font size of list items*/
 }
 
 /*Links das listas de navegação / Links from navigation lists*/
@@ -33,8 +50,51 @@ header nav li a {
 }
 
 /*Colocando título e navegação lado a lado / Placing title and navigation side by side*/
-header .container {
+/*Aplicando a mesma regra a section / Applying the same rule to the section*/
+header .container,
+section .container {
   display: flex; /*Define como um elemento flexível, permitindo alinhamento / Defines as elements*/
   align-items: center; /*Centraliza verticalmente os elementos filhos / Vertically centers the child elements*/
   justify-content: space-between; /*Alinhamento horizontal (espaços entre os elementos)  / Horizontal alignment (spaces between the elements)*/
+}
+
+/*Configurando tamanho das imagens / Setting image sizes*/
+.brands-list img {
+  height: 24px; /*Altura máxima das imagens / Maximum image height*/
+}
+
+/*Alinhando a lista de imagens / Aligning the images list*/
+.brands-list li {
+  display: inline; /*Exibe os itens na mesma linha /  Display items in the same line*/
+  margin-right: 8px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+/*Ajeitando o alinhamento da section / Adjusting alignment for the section*/
+section .container {
+  align-items: flex-start;
+}
+
+/*Adicionando espaçamento entre o header e a section / Adding spacing between the header and section*/
+section {
+  padding: 24px 0; /*Espaçamento interno em cima e embaixo de 24px e 0 aos lados / Internal spacing at the top and bottom of 24px and 0 at the sides*/
+}
+
+/*Colocando espaçamento no h2 da section / Adding space around the h2 heading of the section*/
+section h2 {
+  margin-bottom: 16px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+/*Adicinando cor para todos os textos da section / Adding color to all texts in the section*/
+section {
+  color: #182c61;
+}
+
+/*Colocando espaçamento no p da section  / Adding space around the paragraphs of the section*/
+section p {
+  margin-bottom: 8px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+/*Colocando espaçamento entre a imagem e o contéudo ao lado dela / Adding space between the image and its content on the side*/
+.store-front {
+  margin-right: 32px; /*Espaço externo entre os itens da lista / External space between list items*/
 }
