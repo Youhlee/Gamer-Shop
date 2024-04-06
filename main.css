@@ -1,0 +1,40 @@
+/*Reset na página / Reset on page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Cabeçalho da  página / Page header*/
+header {
+  padding: 16px 0; /*Espaçamento interno de 16px na parte de cima em embaixo e 0 nas laterais / Internal spacing of 16px at the top and bottom and 0 on the sides*/
+  background-color: #182c61; /*Cor de fundo do cabeçalho / Header color background*/
+  color: #ecf0f1; /*Cor do texto do cabeçalho / Text color of the header*/
+}
+
+/*Listas da navegação do  cabeçalho / Navigation list in the header*/
+header nav li {
+  display: inline; /*Exibe os itens na mesma linha /  Display items in the same line*/
+  margin-left: 16px; /*Espaço entre os itens da lista / Space between list items*/
+  font-size: 24px; /*Tamanho da fonte dos itens da lista / Font size of list items*/
+}
+
+/*Links das listas de navegação / Links from navigation lists*/
+header nav li a {
+  color: #ecf0f1; /*Cor do texto dos links / Link text color*/
+  text-decoration: none; /*Remover underline dos links / Remove underlines from links*/
+}
+
+/*Contêiner criado para centralizar conteúdo do cabeçalho / Container created to center content of the header*/
+.container {
+  max-width: 1280px; /*Largura máxima da área do conteúdo / Maximum width of the content area*/
+  width: 100%; /*Ajustar largura para o tamanho total do dispositivo / Adjust width to full device size*/
+  margin: 0 auto; /*Centralizar o topo como 0 e laterais como automático do conteúdo no eixo horizontal / Center top as 0 and sides automatically according*/
+}
+
+/*Colocando título e navegação lado a lado / Placing title and navigation side by side*/
+header .container {
+  display: flex; /*Define como um elemento flexível, permitindo alinhamento / Defines as elements*/
+  align-items: center; /*Centraliza verticalmente os elementos filhos / Vertically centers the child elements*/
+  justify-content: space-between; /*Alinhamento horizontal (espaços entre os elementos)  / Horizontal alignment (spaces between the elements)*/
+}
