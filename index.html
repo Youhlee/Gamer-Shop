@@ -19,13 +19,13 @@
         <h1>Games Shop</h1>
         <nav>
           <ul>
-            <li><a href="#">About the store</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About the store</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section>
+    <section id="about">
       <div class="container">
         <img
           class="store-front"
@@ -54,5 +54,51 @@
         </div>
       </div>
     </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-methods">
+          <div>
+            <h3>contact us</h3>
+            <form action="">
+              <input type="text" placeholder="Your name" required />
+              <input type="email" placeholder="Your email" required />
+              <input type="tel" placeholder="Your phone (optional)" />
+              <textarea placeholder="Your message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#" title="Follow us on Instagram">
+                  <img src="./images/instagram.png" alt="Instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Follow us on Facebook">
+                  <img src="./images/facebook.png" alt="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Visit our YouTube channel">
+                  <img src="./images/youtube.png" alt="Youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>come to us</h3>
+            <p>Rua Javascript n° 124, Village - São Paulo - SP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; Games Shop - All rights reserved - 2024</p>
+      </div>
+    </footer>
   </body>
 </html>

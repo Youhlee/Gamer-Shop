@@ -7,12 +7,16 @@
 
 /*Adionando a fonte Bungee /  Adding the font Bungee to our project */
 header,
-section h2 {
+section h2,
+section h3,
+form button {
   font-family: "Bungee", cursive;
 }
 
 /*Adionando a fonte Roboto /  Adding the font Roboto to our project */
-body {
+body,
+input,
+textarea {
   font-family: "Roboto", sans-serif;
 }
 
@@ -25,7 +29,8 @@ header {
 
 /*Ajustando o peso do texto para que fique mais legível / Adjusting the weight of the text so it is more readable*/
 header h1,
-section h2 {
+section h2,
+section h3 {
   font-weight: Normal; /*Fonte normal para o título / Regular weight for the title*/
 }
 
@@ -59,12 +64,14 @@ section .container {
 }
 
 /*Configurando tamanho das imagens / Setting image sizes*/
-.brands-list img {
+.brands-list img,
+.social-links img {
   height: 24px; /*Altura máxima das imagens / Maximum image height*/
 }
 
 /*Alinhando a lista de imagens / Aligning the images list*/
-.brands-list li {
+.brands-list li,
+.social-links li {
   display: inline; /*Exibe os itens na mesma linha /  Display items in the same line*/
   margin-right: 8px; /*Espaço externo entre os itens da lista / External space between list items*/
 }
@@ -97,4 +104,67 @@ section p {
 /*Colocando espaçamento entre a imagem e o contéudo ao lado dela / Adding space between the image and its content on the side*/
 .store-front {
   margin-right: 32px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+
+/*Organizando contatos, todos em bloco um abaixo do outro  / Organizing contacts, all on one line below each other*/
+#contact .container {
+  display: block; /*Tornando o container um bloco, para que possa ser posicionado relativamente em relação ao seu pai / Making the container a block, so it can be positioned relatively to its parent*/
+}
+
+/*Organizando as divs uma ao lado da outra  / Placing the divs side by side*/
+.contact-methods {
+  display: flex; /* Define como os itens devem ser exibidos um ao lado do outro  / Defines how items should be displayed one next*/
+  justify-content: space-between; /*Alinhamento horizontal (espaços entre os elementos)  / Horizontal alignment (spaces between the elements)*/
+}
+
+/*Estilizando os forms de contato / Styling the contact form*/
+form input,
+form textarea,
+form button {
+  display: block; /*Tornando o container um bloco, para que possa ser posicionado relativamente em relação ao seu pai / Making the container a block, so it can be positioned relatively to its parent*/
+  width: 320px; /*Definindo largura fixa / Fixing the width*/
+  margin-bottom: 8px; /*Espaçamento externo em baixo dos campos de entrada / External space below the input fields*/
+  padding: 8px; /*Espaço interno nos inputs / Inner space in the inputs*/
+}
+
+/*Desabilitando redimensionamento do textarea / Disabling resizing of the textarea*/
+textarea {
+  resize: none;
+  height: 180px;
+}
+
+/*Adicionando mais espaço externo abaixo do título / Adding more external space below the title*/
+section h3 {
+  margin-bottom: 16px; /*Mais espaço abaixo do titulo / More space below the title*/
+}
+
+/*Estilizando o botão / Styling the button*/
+form button {
+  background-color: #182c61; /*Cor de fundo do botão / Button color*/
+  color: #fff; /*Cor do texto do botão / Text color*/
+  border: none; /*Sem borda / No border*/
+  cursor: pointer; /*Cursor para indicar interação / Indicates interaction*/
+}
+
+/*Estilizando quando o mouse passa pro cima do botão / Styling when the mouse goes over the button*/
+form button:hover {
+  background-color: #314e9e; /*Mudança de cor quando o mouse é passado por cima / Color change when the mouse is over*/
+}
+
+/*Alterando a borda quando clicado nos inputs e textarea / Changing the border when clicked on the inputs and textarea*/
+input:focus,
+textarea:focus {
+  outline-color: #182c61; /*Cor da linha de foco / Focus line color*/
+}
+
+/*Estilizando o footer e alinhando ao centro da página / Styling the footer and aligning it to center of the page*/
+footer {
+  background-color: #182c61; /*Cor de fundo do rodapé / Footer background color */
+  color: #ecf0f1; /*Cor do texto do rodapé / Footer text color*/
+  padding: 16px 0; /* Espaçamento vertical entre as linhas do rodapé / Vertical spacing between footer lines*/
+  text-align: center; /*Alinhado ao centro / Center aligned*/
 }
